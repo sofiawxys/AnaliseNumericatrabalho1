@@ -1,10 +1,10 @@
 
-#Exercício 3
+#EXERCÍCIO 3
 
 import math
 
 tolerancia= math.pow(10,-5)
-termo =4 #Primeiro termo
+termo =4 # corresponde ao termo para k=0
 n=0
 soma=0
 
@@ -13,6 +13,6 @@ while abs(termo) >= tolerancia:
     n += 1
     termo = 4 * (math.pow(-1, n) / (2 * n + 1))
 
-print("Número de termos somados= ",n ," Soma= ",soma)
+print('Número de termos somados= ',n ,'| Soma= ',soma)
 erroabsoluto= abs(math.pi-soma)
-print("Erro Absoluto= ",erroabsoluto)
+print('Erro Absoluto= ',erroabsoluto)
